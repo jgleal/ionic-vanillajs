@@ -1,0 +1,7 @@
+*.settings
+*.project
+node
+node_modules
+dist
+build
+doc
