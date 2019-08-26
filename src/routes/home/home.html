@@ -2,7 +2,7 @@
   <ion-toolbar color="primary">
     <ion-title>Header</ion-title>
     <ion-buttons slot="end">
-      <ion-button href="/info">
+      <ion-button id="btnAlert">
         <ion-icon name="information-circle-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -10,27 +10,34 @@
 </ion-header>
 <ion-content fullscreen>
     <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          <ion-card-title>Card Title</ion-card-title>
-        </ion-card-header>
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
 
-        <ion-card-content>
-          Keep close to Nature's heart... and break clear away, once in awhile,
-          and climb a mountain or spend a week in the woods. Wash your spirit clean.
-        </ion-card-content>
-      </ion-card>
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+      
+    <ion-card>
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>ion-item in a card, icon left, button right</ion-label>
+        <ion-button fill="outline" slot="end">View</ion-button>
+      </ion-item>
 
-      <ion-card>
-        <ion-item>
-          <ion-icon name="pin" slot="start"></ion-icon>
-          <ion-label>ion-item in a card, icon left, button right</ion-label>
-          <ion-button fill="outline" slot="end">View</ion-button>
-        </ion-item>
+      <ion-card-content>
+        This is content, without any paragraph or header tags,
+        within an ion-card-content element.
+      </ion-card-content>        
+    </ion-card>
 
-        <ion-card-content>
-          This is content, without any paragraph or header tags,
-          within an ion-card-content element.
-        </ion-card-content>
-      </ion-card>
+    <ion-button expand="block" color="tertiary" href="/info">
+      <ion-icon slot="start" name="code-working"></ion-icon>
+        Other page
+    </ion-button>
+
+    <ion-alert-controller></ion-alert-controller>
 </ion-content>
