@@ -1,0 +1,7 @@
+{
+  "name": "ionic-vanillajs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "custom"
+}
