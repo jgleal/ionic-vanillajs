@@ -1,6 +1,6 @@
 import html from './home.html'
 
-export default class NavHome extends HTMLElement {
+export default class ViewHome extends HTMLElement {
   connectedCallback () {
     this.innerHTML = html
     const controller = document.querySelector('ion-alert-controller')
@@ -10,47 +10,13 @@ export default class NavHome extends HTMLElement {
   }
   handleButtonClick (evt) {
     evt.target.controller.create({
-      header: 'Prompt!',
-      inputs: [
-        {
-          placeholder: 'Placeholder 1'
-        },
-        {
-          name: 'name2',
-          id: 'name2-id',
-          value: 'hello',
-          placeholder: 'Placeholder 2'
-        },
-        {
-          name: 'name3',
-          value: 'http://ionicframework.com',
-          type: 'url',
-          placeholder: 'Favorite site ever'
-        },
-        {
-          name: 'name5',
-          type: 'date'
-        },
-        {
-          name: 'name6',
-          type: 'number',
-          min: -5,
-          max: 10,
-          placeholder: '0'
-        }
-      ],
+      header: 'Info',
+      message: 'Template made by <a href="https://github.com/jgleal">JGLeal</a>',
       buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Confirm Cancel')
-          }
-        }, {
+       {
           text: 'Ok',
           handler: () => {
-            console.log('Confirm Ok')
+            console.log('Alert Ok')
           }
         }
       ]

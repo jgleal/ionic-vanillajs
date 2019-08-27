@@ -1,3 +1,4 @@
-export default {
-  version: '0.0.1'
+module.exports = {
+  version: '0.0.1',
+  title: "Ionic VanillaJS"
 }

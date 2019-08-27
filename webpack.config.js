@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'www'),
     filename: 'bundle.js'
   },
   module: {
@@ -23,7 +23,12 @@ const config = {
     },
     {
       test: /\.html$/,
-      use: ['html-loader']
+      use: {
+        loader: 'html-loader',
+        options: {
+          interpolate: true
+        }
+      }
     }
     ]
   },
@@ -36,7 +41,7 @@ const config = {
 };
 
 module.exports = (env, argv) => {
-  if (argv.mode === 'production') {
+  if (argv.mode === 'develop') {
     config.devtool = 'source-map';
   }
   return config;

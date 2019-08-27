@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Header</ion-title>
+    <ion-title>${require("../../app-config.js").title}</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-buttons slot="end">
       <ion-button id="btnAlert">
         <ion-icon name="information-circle-outline"></ion-icon>
@@ -34,7 +37,7 @@
       </ion-card-content>        
     </ion-card>
 
-    <ion-button expand="block" color="tertiary" href="/info">
+    <ion-button expand="block" color="tertiary" href="/about">
       <ion-icon slot="start" name="code-working"></ion-icon>
         Other page
     </ion-button>
