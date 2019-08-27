@@ -37,7 +37,12 @@ const config = {
       template: path.resolve(__dirname, 'src', 'index.html'),
       hash: true
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 };
 
 module.exports = (env, argv) => {
