@@ -3,8 +3,8 @@ import html from './home.html'
 export default class ViewHome extends HTMLElement {
   connectedCallback () {
     this.innerHTML = html
-    const controller = document.querySelector('ion-alert-controller')
-    const button = document.querySelector('#btnAlert')
+    const controller = this.querySelector('ion-alert-controller')
+    const button = this.querySelector('#btnAlert')
     button.controller = controller
     button.addEventListener('click', this.handleButtonClick, false)
   }
