@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
-    "dev": "webpack-dev-server --open --port=8100",
-    "ionic:serve": "npm run dev",
-    "ionic:build": "npm run build"
+    "dev": "webpack-dev-server",
+    "ionic:serve": "npm run dev --",
+    "ionic:build": "npm run build --"
   },
   "author": "JGLeal",
   "license": "ISC",

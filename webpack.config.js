@@ -46,8 +46,8 @@ const config = {
 };
 
 module.exports = (env, argv) => {
-  if (argv.mode === 'develop') {
-    config.devtool = 'source-map';
+  if (argv.mode === 'production') {
+    //add config to production only
   }
   return config;
 }
