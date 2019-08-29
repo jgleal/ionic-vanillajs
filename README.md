@@ -12,9 +12,9 @@ Uses ionic on VanillaJS template with native web components
   npm i -g ionic
   ```
 
-To build app packages, see the Ionic official doc for:
+To build app packages, see the Ionic official doc:
 * Android Setup: https://ionicframework.com/docs/installation/android
-* iOS Setup: https://ionicframework.com/docs/installation/ios* 
+* iOS Setup: https://ionicframework.com/docs/installation/ios 
 
 ## Developing app
 ```javascript
