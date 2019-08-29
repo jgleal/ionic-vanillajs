@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
+    "build:serve": "npm run build && live-server www",
     "dev": "webpack-dev-server",
     "ionic:serve": "npm run dev --",
     "ionic:build": "npm run build --"
@@ -23,6 +24,7 @@
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "live-server": "^1.2.1",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
