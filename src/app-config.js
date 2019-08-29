@@ -1,4 +1,6 @@
 module.exports = {
   version: '0.0.1',
-  title: "Ionic VanillaJS"
+  name: 'ionic-vanillajs',
+  title: "Ionic VanillaJS",
+  isApp: false
 }
