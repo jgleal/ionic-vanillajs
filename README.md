@@ -11,7 +11,6 @@ Uses ionic on VanillaJS template with native web components
   ```javascript
   npm i -g ionic
   ```
-
 To build app packages, see the Ionic official doc:
 * Android Setup: https://ionicframework.com/docs/installation/android
 * iOS Setup: https://ionicframework.com/docs/installation/ios 
@@ -20,13 +19,15 @@ To build app packages, see the Ionic official doc:
 ```javascript
   ionic serve
 ```
-
 To test app on device, de best way is using [DevApp](https://ionicframework.com/docs/appflow/devapp).
 
 Installs it on you device and execute:
 ```javascript
   ionic serve --devapp
 ```
+Open DevApp and wait while find de app served. Select it and test your app with access to device functions
+
+> :bulb:  Check firewall rules and sure that port is open (default 8100)  
 
 ## Building app
 ```javascript
