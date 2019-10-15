@@ -52,7 +52,7 @@ export default class ViewHome extends HTMLElement {
 
   _createMap() {
     let mMap = M.map({
-      container: 'map-card',
+      container: 'map-home',
       wmcfile: [
         'http://mapea4-sigc.juntadeandalucia.es/files/wmc/satelite.xml*Satelite',
       ],
