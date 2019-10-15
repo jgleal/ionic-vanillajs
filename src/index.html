@@ -5,6 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/@ionic/core@4.8.0/css/ionic.bundle.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="http://mapea4-sigc.juntadeandalucia.es/assets/css/mapea-5.0.1.ol.min.css"
+    rel="stylesheet">
+  <style>
+    /* fix mapea styles bugs */
+    .m-scale-container {
+      height: auto;
+    }
+
+    /* **************************** */
+  </style>
   <title>Ionic VanillaJS</title>
 </head>
 
@@ -39,23 +49,23 @@
         </ion-list>
       </ion-content>
     </ion-menu>
-    
+
     <ion-tabs>
       <ion-tab tab="view-home" component="view-home"></ion-tab>
       <ion-tab tab="view-map" component="view-map"></ion-tab>
       <ion-tab tab="view-about" component="view-about"></ion-tab>
-    
+
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="view-home">
           <ion-icon name="home"></ion-icon>
           <ion-label>Home</ion-label>
         </ion-tab-button>
-    
+
         <ion-tab-button tab="view-map">
           <ion-icon name="map"></ion-icon>
           <ion-label>Map</ion-label>
         </ion-tab-button>
-    
+
         <ion-tab-button tab="view-about">
           <ion-icon name="information-circle"></ion-icon>
           <ion-label>About</ion-label>
@@ -67,6 +77,8 @@
   <script type="text/javascript" src="cordova.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.8.0/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.8.0/dist/ionic/ionic.js"></script>
+  <script type="text/javascript" src="http://mapea4-sigc.juntadeandalucia.es/js/mapea-5.0.1.ol.min.js"></script>
+  <script type="text/javascript" src="http://mapea4-sigc.juntadeandalucia.es/js/configuration-5.0.1.js"></script>
 
 </body>
 
