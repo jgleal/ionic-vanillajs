@@ -1,7 +1,7 @@
 import html from './about.html'
 
 export default class ViewAbout extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     this.innerHTML = html
   }
 }
