@@ -33,3 +33,6 @@ Open DevApp and wait while find de app served. Select it and test your app with 
 ```javascript
   ionic build
 ```
+
+## ¡ IMPORTANT !
+Components than have a map, can't use shadowDOM because the Mapea import is global and will not have access to component DOM

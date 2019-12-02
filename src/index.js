@@ -3,6 +3,7 @@ import './global.css'
 import ViewHome from './routes/home'
 import ViewMap from './routes/map'
 import ViewAbout from './routes/about'
+import MapeaCard from './components/mapea-card'
 
 console.info(`${config.name}@${config.version}`)
 
@@ -17,3 +18,4 @@ function onDeviceReady() {
 window.customElements.define('view-home', ViewHome)
 window.customElements.define('view-map', ViewMap)
 window.customElements.define('view-about', ViewAbout)
+window.customElements.define('mapea-card', MapeaCard)

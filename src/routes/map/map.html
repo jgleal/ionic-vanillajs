@@ -1,11 +1,55 @@
+<ion-menu side="end" menu-id="locations">
+  <ion-header>
+    <ion-toolbar translucent>
+      <ion-title>Locations</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="home" slot="start"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="map" slot="start"></ion-icon>
+        <ion-label>Map</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="information-circle" slot="start"></ion-icon>
+        <ion-label>About</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-menu side="end" menu-id="aa">
+  <ion-header>
+    <ion-toolbar translucent>
+      <ion-title>aa</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="information-circle" slot="start"></ion-icon>
+        <ion-label>About</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-header>
   <ion-toolbar color="tertiary">
     <ion-title>Map</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="aa"></ion-menu-button>
+      <ion-menu-button menu="locations"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content fullscreen>
+<ion-content fullscreen main>
   <div id="map"></div>
 </ion-content>
