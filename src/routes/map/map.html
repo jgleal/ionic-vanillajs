@@ -1,55 +1,27 @@
-<ion-menu side="end" menu-id="locations">
-  <ion-header>
-    <ion-toolbar translucent>
-      <ion-title>Locations</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>
-        <ion-icon name="home" slot="start"></ion-icon>
-        <ion-label>Home</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="map" slot="start"></ion-icon>
-        <ion-label>Map</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="information-circle" slot="start"></ion-icon>
-        <ion-label>About</ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-
-<ion-menu side="end" menu-id="aa">
-  <ion-header>
-    <ion-toolbar translucent>
-      <ion-title>aa</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>
-        <ion-icon name="information-circle" slot="start"></ion-icon>
-        <ion-label>About</ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-
 <ion-header>
   <ion-toolbar color="tertiary">
     <ion-title>Map</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-menu-button menu="aa"></ion-menu-button>
-      <ion-menu-button menu="locations"></ion-menu-button>
-    </ion-buttons>
+    <ion-buttons slot="start"> </ion-buttons>
   </ion-toolbar>
+  <ion-item>
+    <ion-label>Provincia</ion-label>
+    <ion-select
+      id="selectProv"
+      placeholder="Selecciona una provincia"
+      cancel-text="Cancelar"
+      ok-text="Aceptar"
+    >
+      <ion-select-option value="236403,4143685">Sevilla</ion-select-option>
+      <ion-select-option value="212861,4047064">Cádiz</ion-select-option>
+      <ion-select-option value="150572,4132895">Huelva</ion-select-option>
+      <ion-select-option value="343815,4196655">Córdoba</ion-select-option>
+      <ion-select-option value="370300,4065211">Málaga</ion-select-option>
+      <ion-select-option value="447303,4115729">Granada</ion-select-option>
+      <ion-select-option value="431608,4182922">Jaén</ion-select-option>
+      <ion-select-option value="551281,4079925">Almería</ion-select-option>
+    </ion-select>
+  </ion-item>
 </ion-header>
-<ion-content fullscreen main>
+<ion-content fullscreen>
   <div id="map"></div>
 </ion-content>
