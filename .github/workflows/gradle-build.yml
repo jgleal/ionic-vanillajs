@@ -19,7 +19,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install npm dependencies
         run: |
-          sudo npm install -g cordova
+          sudo npm install -g cordova@8.1.2
           sudo npm install -g ionic 
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
           npm install
