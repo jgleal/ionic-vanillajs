@@ -34,4 +34,4 @@ Open DevApp and wait while find de app served. Select it and test your app with 
   ionic build
 ```
 
-test  
+test  2
