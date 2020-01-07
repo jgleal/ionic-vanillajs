@@ -13,8 +13,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Use coturiv/setup-ionic
       uses: coturiv/setup-ionic@v1
-      with:
-        cordova-version: 8
     - name: Build
       run: ionic cordova build android --prod
     - name: Upload app
