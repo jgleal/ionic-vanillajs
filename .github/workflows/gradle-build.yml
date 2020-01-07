@@ -29,4 +29,6 @@ jobs:
         run: |
           sudo ionic cordova platform add android
           sudo ionic cordova prepare android
-          cd platforms/android && ./gradlew assembleRelease
+          cd platforms/android
+          ls
+          ./gradlew assembleRelease
