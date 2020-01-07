@@ -27,5 +27,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Build for Android
         run: |
+          sudo ionic cordova platform add android
           sudo ionic cordova prepare android
-          bash ./gradlew assembleDebug --stacktrace
+          cd android && ./gradlew assembleRelease
