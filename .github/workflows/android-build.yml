@@ -12,8 +12,6 @@ jobs:
       - name: Setup Ionic
         uses: coturiv/setup-ionic@v1.0.0
       - name: Install dependencies
-        run: |
-          sudo npm install
+        run: npm install
       - name: Build
-        run: |
-          sudo ionic cordova build android
+        run: sudo ionic cordova build android --debug
