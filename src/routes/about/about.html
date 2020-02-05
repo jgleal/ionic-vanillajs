@@ -2,10 +2,30 @@
   <ion-toolbar color="secondary">
     <ion-title>About</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 <ion-content fullscreen>
-    
+  <!--TABS-->
+  <ion-tabs>
+    <ion-tab tab="about-tab1" component="about-tab1"></ion-tab>
+    <ion-tab tab="about-tab2" component="about-tab2"></ion-tab>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="about-tab1">
+        <ion-icon name="sunny"></ion-icon>
+        <ion-label>tab1</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="about-tab2">
+        <ion-icon name="moon"></ion-icon>
+        <ion-label>tab2</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
