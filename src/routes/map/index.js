@@ -22,7 +22,7 @@ export default class ViewMap extends HTMLElement {
       container: 'map',
       controls: ['scale'],
     })
-    this.olMap = mMap.getMapImpl()
+    this.olMap = this.mMap.getMapImpl()
     this.sizeObserver.observe(this)
   }
 }
