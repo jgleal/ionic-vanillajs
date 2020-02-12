@@ -24,9 +24,9 @@
     <ion-router use-hash=false main>
       <ion-route url="/" component="view-home"></ion-route>
       <ion-route url="/map" component="view-map"></ion-route>
-      <ion-route component="view-about">
-        <ion-route url="/about" component="about-tab1"></ion-route>
-      </ion-route>
+      <ion-route url="/thematic-map" component="thematic-map"></ion-route>
+      <ion-route url="/search-map" component="search-map"></ion-route>
+      <ion-route url="/about" component="view-about"></ion-route>
     </ion-router>
     <!-- MENU -->
     <ion-menu side="start" menu-id="main-menu">
@@ -44,6 +44,14 @@
           <ion-item href="map">
             <ion-icon name="map" slot="start"></ion-icon>
             <ion-label>Map</ion-label>
+          </ion-item>
+          <!-- <ion-item href="thematic-map">
+            <ion-icon name="barcode" slot="start"></ion-icon>
+            <ion-label>Thematic Map</ion-label>
+          </ion-item> -->
+          <ion-item href="search-map">
+            <ion-icon name="search" slot="start"></ion-icon>
+            <ion-label>Search Map</ion-label>
           </ion-item>
           <ion-item href="about">
             <ion-icon name="information-circle" slot="start"></ion-icon>
