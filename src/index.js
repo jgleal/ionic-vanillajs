@@ -4,7 +4,7 @@ import MapeaCard from './components/mapea-card'
 import ViewHome from './routes/home'
 import ViewAbout from './routes/about'
 import ViewMap from './routes/map'
-import ThematicMap from './routes/thematic-map'
+import CategoryMap from './routes/category-map'
 import SearchMap from './routes/search-map'
 
 console.info(`${config.name}@${config.version}`)
@@ -21,5 +21,5 @@ window.customElements.define('mapea-card', MapeaCard)
 window.customElements.define('view-home', ViewHome)
 window.customElements.define('view-about', ViewAbout)
 window.customElements.define('view-map', ViewMap)
-window.customElements.define('thematic-map', ThematicMap)
+window.customElements.define('category-map', CategoryMap)
 window.customElements.define('search-map', SearchMap)

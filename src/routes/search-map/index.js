@@ -3,7 +3,7 @@ const SEARCH_API =
   'http://mapea4-sigc.juntadeandalucia.es/mapea/api/proxy?url=http://geobusquedas-sigc.juntadeandalucia.es/geobusquedas/sedes/search?q='
 const idMap = 'smap'
 
-export default class ViewMap extends HTMLElement {
+export default class ViewSearchMap extends HTMLElement {
   constructor() {
     super()
     this.sizeObserver = new ResizeObserver(() => {
