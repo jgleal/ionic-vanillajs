@@ -18,7 +18,7 @@ jobs:
           sudo npm i -g @ionic/cli
       - name: Build Android with Ionic
         run: |
-          ionic cordova build android
+          sudo ionic cordova build android
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
