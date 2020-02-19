@@ -13,6 +13,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - uses: actions/android-ndk-toolchain-setup@v0.1
+      with: 
+        api: '21'
+        arch: 'arm'
+        install-location: 'toolchains'
+        force: true
     - name: Install Cordova & Ionic
       run: | 
         sudo npm i -g cordova
