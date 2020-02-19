@@ -15,6 +15,7 @@ console.info(`${config.name}@${config.version}`)
 document.addEventListener('deviceready', onDeviceReady, false)
 function onDeviceReady() {
   config.isApp = true
+  M.proxy(false)
   //here can use device functions
 }
 
