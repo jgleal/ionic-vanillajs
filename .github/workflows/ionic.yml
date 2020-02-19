@@ -20,4 +20,4 @@ jobs:
     - name: Build Android with Ionic
       run: |
         sudo npm install
-        ionic cordova build android
+        sudo ionic cordova build android
