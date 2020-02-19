@@ -6,6 +6,8 @@ import ViewAbout from './routes/about'
 import ViewMap from './routes/map'
 import CategoryMap from './routes/category-map'
 import SearchMap from './routes/search-map'
+// import '../lib/mapea-5.0.1.ol.min.js'
+// import '../lib/configuration.js'
 
 console.info(`${config.name}@${config.version}`)
 
