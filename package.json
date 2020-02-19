@@ -31,7 +31,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "cordova-android": "^7.1.4",
+    "cordova-android": "8.1.0",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^4.1.3",
