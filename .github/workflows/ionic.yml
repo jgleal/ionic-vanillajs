@@ -18,4 +18,6 @@ jobs:
         sudo npm i -g cordova
         sudo npm i -g @ionic/cli
     - name: Build Android with Ionic
-      run: ionic cordova build android
+      run: |
+        npm install #chaching it
+        ionic cordova build android
