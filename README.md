@@ -1,3 +1,5 @@
+![Ionic CI](https://github.com/jgleal/ionic-vanillajs/workflows/Ionic%20CI/badge.svg)
+
 # ionic-vanillajs
 Make easy use Ionic with VanillaJS thanks to this template and native web components
 
