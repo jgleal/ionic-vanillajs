@@ -12,14 +12,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Use coturiv/setup-ionic
-        uses: coturiv/setup-ionic@v1
-        with:
-          cordova-version: 9
-      #    - name: Install Cordova & Ionic
-      #      run: |
-      #        sudo npm i -g cordova
-      #        sudo npm i -g @ionic/cli
+      - name: Install Cordova & Ionic
+        run: |
+          sudo npm i -g cordova
+          sudo npm i -g @ionic/cli
       - name: Build Android with Ionic
         run: |
           echo $ANDROID_NDK_HOME
