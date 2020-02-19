@@ -18,6 +18,10 @@ jobs:
           sudo npm i -g @ionic/cli
       - name: Build Android with Ionic
         run: |
-          echo $ANDROID_NDK_HOME
-          sudo npm install
-          sudo ionic cordova build android
+          ionic cordova build android
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: app-debug
+          path: ./platforms/android/app/build/outputs/apk/debug/app-debug.apk
+      
