@@ -20,6 +20,12 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <platform name="android">
+        <!-- ALLOW HTTP REQUEST -->
+        <edit-config xmlns:android="http://schemas.android.com/apk/res/android" 
+                     file="app/src/main/AndroidManifest.xml" 
+                     mode="merge" target="/manifest/application"> 
+            <application android:usesCleartextTraffic="true" /> 
+        </edit-config>
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
@@ -40,12 +46,7 @@
         <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     </platform>
-    <platform name="ios">
-        <edit-config xmlns:android="http://schemas.android.com/apk/res/android" 
-                    file="app/src/main/AndroidManifest.xml" 
-                    mode="merge" target="/manifest/application"> 
-                <application android:usesCleartextTraffic="true" /> <!-- ALLOW HTTP REQUEST -->
-        </edit-config>
+    <platform name="ios">        
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
