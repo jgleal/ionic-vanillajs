@@ -20,7 +20,7 @@ jobs:
           npm install
           sudo ionic cordova build android
       - name: Upload artifact
-      - uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v1
         with:
            name: app-debug
            path: ./platforms/android/app/build/outputs/apk/debug/app-debug.apk
