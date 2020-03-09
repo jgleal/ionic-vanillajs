@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@ionic/core@5.0.0/css/ionic.bundle.css"
-      rel="stylesheet"
-    />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://mapea4-sigc.juntadeandalucia.es/assets/css/mapea-5.0.1.ol.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      /* fix mapea styles bugs */
-      .m-scale-container {
-        height: auto;
-      }
 
-      /* **************************** */
-    </style>
-    <title>Ionic VanillaJS</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/@ionic/core@5.0.0/css/ionic.bundle.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet"
+    href="https://mapea4-sigc.juntadeandalucia.es/assets/css/mapea-5.0.1.ol.min.css" rel="stylesheet" />
+  <style>
+    /* fix mapea styles bugs */
+    .m-scale-container {
+      height: auto;
+    }
 
-  <body>
-    <ion-app>
-      <!-- ROUTER -->
-      <ion-router use-hash="true" main>
-        <ion-route url="/" component="view-home"></ion-route>
-        <ion-route url="/map" component="view-map"></ion-route>
-        <ion-route url="/category-map" component="category-map"></ion-route>
-        <ion-route url="/search-map" component="search-map"></ion-route>
-        <ion-route url="/about" component="view-about"></ion-route>
-      </ion-router>
-      <!-- MENU -->
-      <ion-menu side="start" menu-id="main-menu">
-        <ion-header>
-          <ion-toolbar>
-            <ion-title>Menu</ion-title>
-          </ion-toolbar>
-        </ion-header>
-        <ion-content>
-          <ion-list>
+    /* **************************** */
+  </style>
+  <title>Ionic VanillaJS</title>
+</head>
+
+<body>
+  <ion-app>
+    <!-- ROUTER -->
+    <ion-router use-hash="true" main>
+      <ion-route url="/" component="view-home"></ion-route>
+      <ion-route url="/map" component="view-map"></ion-route>
+      <ion-route url="/category-map" component="category-map"></ion-route>
+      <ion-route url="/search-map" component="search-map"></ion-route>
+      <ion-route url="/about" component="view-about"></ion-route>
+    </ion-router>
+    <!-- MENU -->
+    <ion-menu side="start" menu-id="main-menu">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle>
             <ion-item href="/">
               <ion-icon name="home" slot="start"></ion-icon>
               <ion-label>Home</ion-label>
@@ -63,31 +58,21 @@
               <ion-icon name="information-circle" slot="start"></ion-icon>
               <ion-label>About</ion-label>
             </ion-item>
-          </ion-list>
-        </ion-content>
-      </ion-menu>
-      <ion-nav root="view-home"></ion-nav>
-    </ion-app>
-    <ion-menu-controller></ion-menu-controller>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@ionic/core@5.0.0/dist/ionic/ionic.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://cdn.jsdelivr.net/npm/@ionic/core@5.0.0/dist/ionic/ionic.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://mapea4-sigc.juntadeandalucia.es/js/mapea-5.0.1.ol.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://mapea4-sigc.juntadeandalucia.es/js/configuration-5.0.1.js"
-    ></script>
-    <!-- <script type="text/javascript" src="../lib/mapea-5.0.1.ol.min.js"></script>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-nav root="view-home"></ion-nav>
+  </ion-app>
+  <ion-menu-controller></ion-menu-controller>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@5.0.0/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@5.0.0/dist/ionic/ionic.js"></script>
+  <script type="text/javascript" src="https://mapea4-sigc.juntadeandalucia.es/js/mapea-5.0.1.ol.min.js"></script>
+  <script type="text/javascript" src="https://mapea4-sigc.juntadeandalucia.es/js/configuration-5.0.1.js"></script>
+  <!-- <script type="text/javascript" src="../lib/mapea-5.0.1.ol.min.js"></script>
   <script type="text/javascript" src="../lib/configuration.js"></script> -->
-    <script></script>
-  </body>
+  <script></script>
+</body>
+
 </html>
