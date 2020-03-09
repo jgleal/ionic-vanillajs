@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Tabs Map</ion-title>
+    <ion-buttons slot="start">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <!--TABS-->
+  <ion-tabs>
+    
+    <ion-tab tab="tab-map" component="tab-map"></ion-tab>
+    <ion-tab tab="tab-information" component="tab-information"></ion-tab>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab-map" selected="true">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Mapa</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="tab-information">
+        <ion-icon name="information"></ion-icon>
+        <ion-label>Información</ion-label>
+        <ion-nav-view name="tab-information"></ion-nav-view>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+
+  </ion-tabs>
+</ion-content>

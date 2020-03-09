@@ -1,13 +1,15 @@
 import config from './app-config'
 import './global.css'
+import 'regenerator-runtime/runtime'
 import MapeaCard from './components/mapea-card'
 import ViewHome from './routes/home'
 import ViewAbout from './routes/about'
 import ViewMap from './routes/map'
 import CategoryMap from './routes/category-map'
 import SearchMap from './routes/search-map'
-// import '../lib/mapea-5.0.1.ol.min.js'
-// import '../lib/configuration.js'
+import ViewTabs from './routes/tabs'
+import ViewTabsMap from './routes/tabs/tab-map'
+import ViewTabsInfo from './routes/tabs/tab-information'
 
 console.info(`${config.name}@${config.version}`)
 
@@ -26,3 +28,6 @@ window.customElements.define('view-about', ViewAbout)
 window.customElements.define('view-map', ViewMap)
 window.customElements.define('category-map', CategoryMap)
 window.customElements.define('search-map', SearchMap)
+window.customElements.define('view-tabs', ViewTabs)
+window.customElements.define('tab-map', ViewTabsMap)
+window.customElements.define('tab-information', ViewTabsInfo)
