@@ -27,9 +27,10 @@ export default class ViewTabMap extends HTMLElement {
 
   async _generateLayer() {
     const geoData = await this._parent.getData()
+    console.log(geoData)
     let lyGeo = new M.layer.GeoJSON({
       name: 'capaJson',
-      source: geoData.content,
+      source: geoData,
     })
     lyGeo.setStyle(
       new M.style.Point({

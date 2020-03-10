@@ -11,8 +11,8 @@ export default class ViewTabInfo extends HTMLElement {
 
   async _getData() {
     let data = await this._parent.getData()
-    data = JSON.parse(data.content) //debido a pasar por proxy
-    this._generateList(data.content.features)
+    data = JSON.parse(data) //debido a pasar por proxy
+    this._generateList(data.features)
   }
 
   _generateList(features) {
