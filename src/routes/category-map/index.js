@@ -34,7 +34,11 @@ lyData.setStyle(
     bus: styleBus,
   })
 )
-let filters = []
+let filters = [
+  M.filter.EQUAL('type', 'bus'),
+  M.filter.EQUAL('type', 'shop'),
+  M.filter.EQUAL('type', 'bar'),
+]
 
 export default class ViewCategoryMap extends HTMLElement {
   constructor() {
@@ -71,14 +75,12 @@ export default class ViewCategoryMap extends HTMLElement {
       if (icon.name.indexOf('-outline') != -1) {
         //active
         btn.color = 'dark'
-        icon.style.color = 'white'
         icon.name = icon.name.replace('-outline', '')
         filters.push(M.filter.EQUAL('type', category))
       } else {
         //deactive
         filters = filters.filter(f => f.toCQL() != `type='${category}'`)
         btn.color = 'light'
-        icon.style.color = 'black'
         icon.name += '-outline'
       }
       lyData.setFilter(M.filter.OR(filters))
