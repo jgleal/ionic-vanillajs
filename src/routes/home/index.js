@@ -31,21 +31,18 @@ export default class ViewHome extends HTMLElement {
                           <li><b>uuid:</b> ${device.uuid}</li>
                         </ul>` + contentMessage
     }
-    evt.target.controller
-      .create({
-        header: 'Info',
-        message: contentMessage,
-        buttons: [
-          {
-            text: 'Ok',
-            handler: () => {
-              console.log('Alert Ok')
-            },
-          },
-        ],
-      })
-      .then(alert => {
-        alert.present()
-      })
+    let alert = document.createElement('ion-alert')
+    alert.header = 'Info'
+    alert.message = contentMessage
+    alert.buttons = [
+      {
+        text: 'Ok',
+        handler: () => {
+          console.log('Alert Ok')
+        },
+      },
+    ]
+    document.body.appendChild(alert)
+    alert.present()
   }
 }
