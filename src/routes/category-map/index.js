@@ -53,7 +53,7 @@ export default class ViewCategoryMap extends HTMLElement {
     this.innerHTML = html
 
     this.mMap = new M.map({
-      container: 'tmap',
+      container: 'cmap',
       center: [236403, 4141785],
       zoom: 6,
       controls: ['scale'],
@@ -70,7 +70,7 @@ export default class ViewCategoryMap extends HTMLElement {
   }
 
   _toggleCategory(btn, category) {
-    btn.addEventListener('click', evt => {
+    btn.addEventListener('click', (evt) => {
       const icon = btn.querySelector('ion-icon')
       if (icon.name.indexOf('-outline') != -1) {
         //active
@@ -79,7 +79,7 @@ export default class ViewCategoryMap extends HTMLElement {
         filters.push(M.filter.EQUAL('type', category))
       } else {
         //deactive
-        filters = filters.filter(f => f.toCQL() != `type='${category}'`)
+        filters = filters.filter((f) => f.toCQL() != `type='${category}'`)
         btn.color = 'light'
         icon.name += '-outline'
       }

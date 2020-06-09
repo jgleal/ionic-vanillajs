@@ -32,7 +32,7 @@ export default class ViewTabMap extends HTMLElement {
     this._generateLayer()
 
     this.mMap = new M.map({
-      container: 'map',
+      container: 'tmap',
       center: [236403, 4141785],
       zoom: 3,
       controls: ['scale'],
@@ -49,13 +49,13 @@ export default class ViewTabMap extends HTMLElement {
       name: 'Fuentes de Andalucía',
       source: geoData,
     })
-    this.lyGeo.on(M.evt.SELECT_FEATURES, features => {
-      features.forEach(f => {
+    this.lyGeo.on(M.evt.SELECT_FEATURES, (features) => {
+      features.forEach((f) => {
         f.setStyle(featureSelStyle)
       })
     })
-    this.lyGeo.on(M.evt.UNSELECT_FEATURES, features => {
-      features.forEach(f => {
+    this.lyGeo.on(M.evt.UNSELECT_FEATURES, (features) => {
+      features.forEach((f) => {
         f.setStyle(featureStyle)
       })
     })
